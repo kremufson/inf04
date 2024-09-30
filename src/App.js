@@ -1,23 +1,13 @@
-import logo from './logo.svg';
+import "bootstrap/dist/css/bootstrap.css";
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container-fluid">
+        <div className="col-6">
+          <label htmlFor="tytul" className="form-label">Tytuł filmu</label>
+          <input type="text" className="form-control" id="tytul" placeholder="" />
+        </div>
     </div>
   );
 }
