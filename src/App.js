@@ -6,6 +6,12 @@ function App() {
   const [tytul, setTytul] = useState("");
   const [rodzaj, setRodzaj] = useState("");
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    console.log(`Tytuł: ${tytul}, Rodzaj: ${rodzaj}`)
+  }
+
   return (
     <div className="container-fluid">
       <form onSubmit={handleSubmit}>
